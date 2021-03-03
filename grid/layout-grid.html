@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Grid Eindopdracht</title>
+
+        <style>
+
+            body {
+                margin: 0;
+            
+            }
+
+            #dashboard {
+                display: grid;
+                grid-gap: 30px;
+                height: 98vh;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+            }
+
+            .header {
+                grid-column-start: 1;
+                grid-column-end: 9;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                border: 5px solid rgb(255, 55, 55);
+
+            }
+
+            .verbruik  {
+                border: 5px solid rgb(255, 55, 55);
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 5;
+                margin-left: 50px;
+                margin-top: 50px;
+            
+            }
+
+            .control-panel {
+                grid-column-start: 6;
+                grid-column-end: 9;
+                grid-row-start: 2;
+                grid-row-end: 8;
+                margin-left: 80px;
+                margin-right: 200px;
+                margin-top: 50px;
+                border: 5px solid rgb(255, 55, 55);
+
+            }
+
+            .verwacht-weer {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 5;
+                grid-row-end: 8;
+                margin-left: 50px; 
+                border: 5px solid rgb(255, 55, 55);
+
+            }
+
+            .momenteel-weer {
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 5;
+                grid-row-end: 8;
+                margin-left: 50px;
+                border: 5px solid rgb(255, 55, 55);
+
+            }
+
+            .footer {
+                grid-column-start: 1;
+                grid-column-end: 9;
+                grid-row-start: 8;
+                grid-row-end: 9;
+                padding-top: 40px;
+                border: 5px solid rgb(255, 55, 55);
+
+            }
+
+            
+
+
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="dashboard">
+            <div class="item header">
+                <h2>Logo Dashboard</h2>
+            </div>
+
+            <div class="item verbruik">
+                <h2>verbruik standen van de meters</h2>
+            </div>
+
+            <div class="item control-panel">
+                <h2>Control panel</h2>
+            </div>
+
+            <div class="item verwacht-weer">
+                <h2>Het verwachte weer</h2>
+            </div>
+
+            <div class="item momenteel-weer">
+                <h2>momentele tempratuur</h2>
+            </div>
+
+            <div class="item footer">
+                <h2>footer</h2>
+            </div>
+
+        </div>
+    </body>
+</html>
