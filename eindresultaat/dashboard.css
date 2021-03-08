@@ -9,6 +9,20 @@ body {
   color: white;
 }
 
+#darkmodeknop {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  border: red 10px solid;
+}
+
+.vakje {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+
+}
+
 #dashboard {
     display: grid;
     grid-gap: 30px;
@@ -19,12 +33,11 @@ body {
 }
 
 .header {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding: 0px;
-
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 0px;
 }
 
 .photo > img {
