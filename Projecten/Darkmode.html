@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="darkmodetest.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Toggle voor Dark/Light Mode</h2>
+    <p>klik op de knop voor darkmode.</p>
+    <div class="vakje">
+        <button class="darkmodeknop" onclick="myFunction()">Toggle dark mode</button>
+    </div>
+    <script>darkmodetest.js</script>
+    <script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    </script>
+
+</style>
+</head>
+<body>
+
+
