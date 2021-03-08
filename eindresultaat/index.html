@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
     <title>DuurzaamHuis</title>
 </head>
 <body>
-    <h1>Duurzaamhuis</h1>
-    <h2>Door Colin de Groot en Thijn Glas</h2>
+    <div id="dashboard">
+        <div class="item header">
+            <div class="darkmode">
+                <button onclick="darkswitch()">toggle darkmode</button>
+                <div id="darkmodediv">Switch to darkmode</div>
+            </div>
+            <div class="photo"><img src="/logos/logo startup.JPG" alt="logo" 
+            style=" display: flex; width: 350px; ">
+            </div>
+        </div>
+
+        <div class="item verbruik">
+            <h2>verbruik standen van de meters</h2>
+        </div>
+
+        <div class="item control-panel">
+            <div class="switches">
+                <div class="switch1">
+                    <h2>aanstuurbaar object1</h2>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="item verwacht-weer">
+            <h2>Het verwachte weer</h2>
+        </div>
+
+        <div class="item momenteel-weer">
+            <h2>momentele tempratuur</h2>
+        </div>
+
+        <div class="item footer">
+            <h2>footer</h2>
+        </div>
+
+    </div>
+    <script>darkmode.js</script>
 </body>
 </html>
