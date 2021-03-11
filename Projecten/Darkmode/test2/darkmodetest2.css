@@ -21,9 +21,7 @@ color: rgba(255, 255, 255, 0.705);
   text-align: horizontal;
 }
 
-#control-panel{
 
-}
 
 
 #vakje {
@@ -113,11 +111,7 @@ border: 5px solid green;
 
 }
 
-#switch1 {
-  display: flex;
-  margin-left: 200px;
-  margin-top: 500px;
-}
+
 
 #momenteel-weer {
   display: flex;
@@ -135,7 +129,7 @@ border: 5px solid green;
 
 
 /* de switch - de circkel om de switch */
-.switch {
+.switch1 {
   display: flex;
   position: relative;
   display: inline-block;
@@ -144,7 +138,7 @@ border: 5px solid green;
 }
 
 /*laat de chechbox niet zien*/
-.switch input {
+.switch1 input {
   opacity: 0;
   width: 0;
   height: 0;
