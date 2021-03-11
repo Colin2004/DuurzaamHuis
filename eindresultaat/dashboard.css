@@ -11,9 +11,8 @@ body {
 
 #darkmodeknop {
   display: flex;
-  justify-content: center;
-  place-items: center;
-  border: red 10px solid;
+  margin-left: 2000px;
+  padding: 0px;
 }
 
 .vakje {
@@ -37,7 +36,7 @@ body {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding: 0px;
+
 }
 
 .photo > img {
@@ -119,7 +118,6 @@ body {
     grid-column-end: 9;
     grid-row-start: 8;
     grid-row-end: 9;
-    padding-top: 40px;
     background-color: #0a4427;
 
 }
@@ -129,8 +127,8 @@ body {
     display: flex;
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 100px;
+    height: 38px;
   }
   
   /*laat de chechbox niet zien*/
@@ -156,10 +154,10 @@ body {
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 40px;
+    width: 40px;
     left: 4px;
-    bottom: 4px;
+    bottom: 1px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -176,7 +174,7 @@ body {
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    transform: translateX(45px);
   }
   
   .slider.round {
