@@ -4,47 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="darkmodetest.css">
     <title>DuurzaamHuis</title>
 </head>
 <body>
     <div id="dashboard">    
     <!--Alle elementen zijn ingedeeld in de dashboard. De dashboard speelt als het ware de rol van de body-->
-        <div class="item header">
+        <div class="item header" id="header">
             <div class="photo"><img src="logostartup.JPG" alt="logo" 
             style=" display: flex; width: 350px; "> 
-                <div class="toggledarkmode">
-                    <button id="darkmodeknop" onclick="myFunction()">Toggle dark mode</button>
-                </div>
             </div>
         </div>
 
-        <div class="item verbruik">
+        <div class="item toggledarkmode" id="toggledarkmode">
+            <button id="darkmodeknop" onclick="myFunction()">Toggle dark mode</button>
+        </div>
+
+        <div class="item header-foto" id="header-foto"></div>
+
+        <div class="item verbruik" id="verbruik">
             <h2>verbruik standen van de meters</h2>
         </div>
 
-        <div class="item control-panel">
-            <div class="switches">
-                <div class="switch1">
+        <div class="item control-panel" id="control-panel">
+            <div class="item switches" id="switches">
+                <div class="item switch1" id="switch1">
                     <h2>aanstuurbaar object1</h2>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
+                    <label class="item switch">
+                        <input type="item checkbox">
+                        <span class="item slider round" ></span>
                     </label>
                 </div>
             </div>
         </div> 
 
-        <div class="item verwacht-weer">
+        <div class="item verwacht-weer" id="verwacht-weer">
             <h2>Het verwachte weer</h2>
         </div>
 
-        <div class="item momenteel-weer">
+        <div class="item momenteel-weer" id="momenteel-weer">
             <h2>momentele tempratuur</h2>
-        </div>
-
-        <div class="item footer">
-            <h2>footer</h2>
         </div>
 
     </div>

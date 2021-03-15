@@ -5,7 +5,7 @@ function darkmode() {
 
   function darkswitch() {
     var x = document.getElementById("myDIV");
-    if (x.innerHTML === "Hello") {
+    if (x.innerHTML === "Switch to darkmode") {
       x.innerHTML = "Switch to lightmode";
     } else {
       x.innerHTML = "Hello";
