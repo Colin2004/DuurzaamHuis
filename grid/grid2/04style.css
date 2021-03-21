@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(167, 179, 168);
+    margin: 0px;
+}
+
+#dashboard {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "header   header"
+                         "cost     kwh"
+                         "weather  weather"
+                         "graph    graph"
+                         "controls controls";
+                         
+}
+
+.item {
+    color: white;
+    background-color: #940b0b;
+    border: 1px solid #000000;
+    padding: 20px;
+    margin: 10px;
+    min-height: 50px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.header {
+    background-color: green;
+    grid-area: header;
+}
+
+.cost {
+    grid-area: cost;
+}
+
+.kwh {
+    grid-area: kwh;
+}
+
+.weather {
+    grid-area: weather;
+}
+
+.graph {
+    grid-area: graph;
+}
+
+.controls {
+    grid-area: controls;
+}
+
+@media screen and (min-width: 900px) {
+    #dashboard {
+        grid-template-columns: 200px 1fr 1fr 200px;
+        grid-template-areas: "header   header   header   header"
+                             "cost     controls controls weather"
+                             "graph    graph    kwh      weather"
+                             
+    }
+}
