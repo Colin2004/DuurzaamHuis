@@ -78,3 +78,23 @@ body {
         margin: 0px;
     }
 }
+
+/*layout voor apparaten met hoog scherm zoals de ipad pro*/
+@media screen and ( max-width: 1100px ) and ( min-height: 900px ) {
+    #dashboard {
+        height: 98vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 20px;
+        grid-template-areas: "header       header          header"
+                             "verbruik     verbruik        controlpanel"
+                             "verbruik     verbruik        controlpanel"
+                             "berekenaar   berekenaar     controlpanel"
+                             "weer         weer            theme" ;
+    }
+
+    body {
+        margin: 0px;
+    }
+}
