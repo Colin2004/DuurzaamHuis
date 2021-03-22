@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    background-color: rgba(180, 180, 180, 0.849);
+
+}
+/*telefoon en tablet versie*/
+#dashboard {
+    height: 97vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "header       header"
+                         "verbruik     verbruik"
+                         "verbruik     verbruik"
+                         "berekenaar   weer"
+                         "berekenaar   weer"
+                         "berekenaar   theme"
+                         "berekenaar   theme"
+                         "controlpanel controlpanel"
+                         "controlpanel controlpanel";
+}
+
+.item {
+    background: #FFFFFF;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.header {
+    background-color: rgb(19, 116, 195);
+    grid-area: header;
+}
+
+.verbruik {
+    grid-area: verbruik;
+
+}
+
+.berekenaar {
+    grid-area: berekenaar;
+
+}
+
+.weer {
+    grid-area: weer;
+
+}
+
+.theme {
+    grid-area: theme;
+
+}
+
+.controlpanel {
+    grid-area: controlpanel;
+
+}
+
+/*Desktop versie layout*/
+
+@media screen and (min-width: 900px) {
+    #dashboard {
+        height: 98vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 20px;
+        grid-template-areas: "header       header   header"
+                             "verbruik     verbruik controlpanel"
+                             "verbruik     verbruik controlpanel"
+                             "berekenaar   weer     controlpanel"
+                             "berekenaar   weer     theme" ;
+    }
+
+    body {
+        margin: 0px;
+    }
+}
