@@ -93,8 +93,7 @@ body {
 
 .switch1 {
     display: flex;
-    margin-left: 200px;
-    margin-top: 500px;
+    float: right;
 }
 
 .momenteel-weer {
