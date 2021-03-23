@@ -22,6 +22,7 @@ body {
                          "controlpanel controlpanel";
 }
 
+/*  de Grid items  */
 .item {
     background-color:  #FFFFFF;
     border: 2px solid rgb(111, 110, 110);
@@ -38,9 +39,12 @@ body {
     grid-area: header;
 }
 
+/* Hier moet naar gekeken worden omdat het een bepaalde qeury blokeert*/
 #logoLB {
-   padding-left: 10px;
-   padding-top: 5px;
+    grid-area: header;
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .verbruik {
@@ -48,6 +52,7 @@ body {
 
 }
 
+/* Hier ben ik mee bezig niks mee doen aub*/
 .berekenaar {
     grid-area: berekenaar;
 
@@ -71,8 +76,7 @@ body {
 .tijdcard {
     justify-content: space-between;
     padding: 60px;
-    background-color: #d6d6da;
-    border-radius: 0.4em;
+    
 }
 
 /*Desktop versie layout*/
