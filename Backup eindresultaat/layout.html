@@ -8,12 +8,25 @@
     <title>BrightSight</title>
 </head>
 <body>
+    <script>time.js</script>
     <div id="dashboard">
         <div class="item header">HEADER</div>
         <div class="item verbruik">VERBRUIK</div>
         <div class="item berekenaar">BEREKENAAR</div>
         <div class="item weer">WEER</div>
-        <div class="item theme">THEME</div>
+        <div class="item theme">
+              <div class="tijdcard">
+                <div class="overviewcard__icon">
+                  <div class="tijd">
+                    <div id="dagmaandjaar"></div>
+                    <div class="clock">
+                      <div id="display"></div>
+                    </div>
+                    <div id="places"></div>
+                  </div>
+                </div>
+              </div>
+        </div>
         <div class="item controlpanel">controlpanel</div>
     </div>
 </body>

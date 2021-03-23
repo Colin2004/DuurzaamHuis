@@ -1,32 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Current Weather</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <div id="weather">
-    <div id="description"></div>
-    <h1 id="temp"></h1>
-    <div id="location"></div>
-  </div>
-  <script lang="text/javascript">
-    // future javascript
-    function weatherBalloon( cityID ) {
-  var key = '{yourkey}';
-  fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
-  .then(function(resp) { return resp.json() }) // Convert data to json
-  .then(function(data) {
-    console.log(data);
-  })
-  .catch(function() {
-    // catch any errors
-  });
-}
+    <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-theme="original" >Amsterdam:</a>
 
-window.onload = function() {
-  weatherBalloon( 6167865 );
-}
-  </script>
+<script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+    <div class="een">
+        <pre>
+            &lt;? print_r(localtime());
+            echo "<br><br>";
+            print_r(localtime(time(),true)); ?&gt;
+        </pre>
+    </div>
 </body>
 </html>
