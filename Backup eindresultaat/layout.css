@@ -1,11 +1,13 @@
 body {
-    margin: 0px;
+    margin: none; /* Dit zorgt ervoor dat er geen overbodige margin in de body zit. 
+                     Dit zorgt er soms voor dat de content net niet volledig past*/
+
     background-color: rgba(180, 180, 180, 0.849);
 
 }
 /*telefoon en tablet versie*/
 #dashboard {
-    height: 97vh;
+    height: 97vh; /*staat niet op 100 omdat er dan soms een schuifbalk verschijnt wat niet mooi past op de dashboard*/
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -22,6 +24,7 @@ body {
                          "controlpanel controlpanel";
 }
 
+/* de items en andere elementen in de grid */
 /*  de Grid items  */
 .item {
     background-color:  #FFFFFF;
@@ -39,7 +42,7 @@ body {
     grid-area: header;
 }
 
-/* Hier moet naar gekeken worden omdat het een bepaalde qeury blokeert*/
+/* Op bepaalde qeury's word de header te groot door de logo */
 #logoLB {
     grid-area: header;
     max-width: 100%;
@@ -79,7 +82,10 @@ body {
     
 }
 
+/* Verschillende media querys om het dashboard op zoveel mogelijk apparaten te laten functioneren*/
+
 /*Desktop versie layout*/
+/* de mediaquery van de telefoon en gemiddlede tablets versie staat onder de comment op regel7*/
 
 @media screen and (min-width: 900px) {
     #dashboard {
@@ -111,7 +117,7 @@ body {
         grid-template-areas: "header       header          header"
                              "verbruik     verbruik        controlpanel"
                              "verbruik     verbruik        controlpanel"
-                             "berekenaar   berekenaar     controlpanel"
+                             "berekenaar   berekenaar      controlpanel"
                              "weer         weer            theme" ;
     }
 
@@ -119,3 +125,26 @@ body {
         margin: 0px;
     }
 }
+
+/*layout voor apparaten met erg kleine schermen*/
+@media screen and ( max-width: 350px ) and ( max-height: 550px ){
+    #dashboard {
+        height: 98vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 20px;
+        grid-template-areas: "header          header"
+                             "verbruik        verbruik"
+                             "controlpanel    controlpanel"
+                             "berekenaar      berekenaar"
+                             "weer            weer"
+                             "theme           theme" ;
+    }
+
+    body {
+        margin: 0px;
+    }
+}
+
+/* Er komen hieronder nog 1 tot 2 extra queries voor schermen met een erg kleine hoogte*/
