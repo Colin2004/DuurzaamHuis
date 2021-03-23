@@ -38,6 +38,11 @@ body {
     grid-area: header;
 }
 
+#logoLB {
+   padding-left: 10px;
+   padding-top: 5px;
+}
+
 .verbruik {
     grid-area: verbruik;
 
