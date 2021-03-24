@@ -41,6 +41,8 @@ body {
 
 /* Op bepaalde qeury's word de header te groot door de logo */
 #logoLB {
+    display: grid;
+    align-items: center;
     grid-area: header;
     max-width: 100%;
     height: auto;
@@ -52,10 +54,25 @@ body {
 
 }
 
-/* Hier ben ik mee bezig niks mee doen aub */
+input {
+    width: 100%;
+}
+
+#kostenP {
+    align-items: center;
+}
+
+/* Hier ben ik mee bezig niks mee doen aub*/
 .berekenaar {
     grid-area: berekenaar;
 
+}
+
+/* Dit is de stroomkosten berekenaar */
+.Kosten {
+    grid-area: berekenaar;
+    max-width: 100%;
+    height: auto;
 }
 
 .weer {
@@ -79,10 +96,10 @@ body {
     
 }
 
-/* Verschillende media querys om het dashboard op zoveel mogelijk apparaten te laten functioneren */
+/* Verschillende media querys om het dashboard op zoveel mogelijk apparaten te laten functioneren*/
 
-/* Desktop versie layout */
-/* de mediaquery van de telefoon en gemiddlede tablets versie staat onder de comment op regel7 */
+/*Desktop versie layout*/
+/* de mediaquery van de telefoon en gemiddlede tablets versie staat onder de comment op regel7*/
 
 @media screen and (min-width: 900px) {
     #dashboard {
@@ -146,17 +163,17 @@ body {
 
 /* lay-out voor apparaten met een kleine height*/
 
-@media screen and ( max-height: 600px ){
+@media screen and (max-height: 600px) {
     #dashboard {
         height: 98vh;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-gap: 10px;
-        grid-template-areas: "header          header           header          header"
-                             "verbruik        verbruik         controlpanel    controlpanel"
-                             "theme           theme            controlpanel    controlpanel"
-                             "berekenaar      berekenaar       weer            weer" ;
+        grid-gap: 20px;
+        grid-template-areas: "header  verbruik     verbruik controlpanel"
+                             "header  verbruik     verbruik controlpanel"
+                             "header  berekenaar   weer     controlpanel"
+                             "header  berekenaar   weer     theme" ;
     }
 
     body {

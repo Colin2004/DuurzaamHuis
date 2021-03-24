@@ -15,8 +15,22 @@
             <img id="logoLB" src="logoLB.png" alt="Bright logo">
         </div>
         <div class="item verbruik">VERBRUIK</div>
+
+
         <!-- Hier komt een kWh berekenaar te staan-->
-        <div class="item berekenaar">BEREKENAAR</div>
+        <div class="item berekenaar">
+          <div class="Kosten" data-id="STROOM">
+            <h1>Titel apparaat</h1>
+            <div>
+                <h3><p id="kostenP">Aantal kWh: <span>0</span></p></h3>
+                <input type="range" min="0" max="240" step="10" value="15" />
+            </div>
+            <h2>Verbruik of kosten</h2>
+            <button>Toon verbruik</button>
+          </div>
+        </div>
+
+
         <div class="item weer">WEER</div>
         <!--- Hier komt de tijd te staan "theme" moet nog veranderd worden naar time  -->
         <div class="item theme">
@@ -32,8 +46,13 @@
                 </div>
               </div>
         </div>
+
+
         <div class="item controlpanel">controlpanel</div>
     </div>
-  <!--Hier wordt starks de javascript ingeladen-->
+
+  <!--Hier wordt javascript ingeladen-->
+  <script src="stroomKosten.js"></script> <!-- De stroom kosten berekenen-->
+  
 </body>
 </html>
