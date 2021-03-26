@@ -16,12 +16,12 @@ body {
     grid-template-areas: "header       header"
                          "verbruik     verbruik"
                          "verbruik     verbruik"
-                         "berekenaar   weer"
-                         "berekenaar   weer"
                          "berekenaar   theme"
                          "berekenaar   theme"
-                         "controlpanel controlpanel"
-                         "controlpanel controlpanel";
+                         "berekenaar   weer"
+                         "berekenaar   weer"
+                         "controlpanel weer"
+                         "controlpanel weer";
 }
 
 /* de items en andere elementen in de grid */
@@ -42,11 +42,11 @@ body {
 /* Op bepaalde qeury's word de header te groot door de logo */
 #logoLB {
     display: grid;
-    align-items: center;
     grid-area: header;
     max-width: 100%;
-    height: auto;
-    
+    height: 100%;
+    padding: 0px;
+
 }
 
 .verbruik {
@@ -71,7 +71,7 @@ input {
 /* Dit is de stroomkosten berekenaar */
 .Kosten {
     grid-area: berekenaar;
-    max-width: 100%;
+    max-width: auto;
     height: auto;
 }
 
@@ -79,6 +79,20 @@ input {
     grid-area: weer;
 
 }
+
+/* dit is het weer */
+#weerpositie {
+    grid-area: weer;
+    max-width: auto;
+    height: auto;
+}
+
+.textweer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .theme {
     grid-area: theme;
@@ -98,12 +112,37 @@ input {
 
 /* Verschillende media querys om het dashboard op zoveel mogelijk apparaten te laten functioneren*/
 
+@media screen and (max-width: 740px) {
+    #dashboard {
+        height: 98vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 20px;
+        grid-template-areas: "header        header"
+                             "verbruik      verbruik "
+                             "weer          weer"
+                             "controlpanel  controlpanel"
+                             "berekenaar    berekenaar"
+                             "theme         theme";
+    }
+}
+
 /*Desktop versie layout*/
 /* de mediaquery van de telefoon en gemiddlede tablets versie staat onder de comment op regel7*/
 
+
 @media screen and (min-width: 900px) {
+    body{
+        margin: 0px;
+    }
+
+    .item{
+        padding-bottom: none;
+    }
+
     #dashboard {
-        height: 98vh;
+        height: 99vh;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -117,6 +156,21 @@ input {
 
     body {
         margin: 0px;
+    }
+
+    #weerpositie {
+        grid-area: weer;
+        display: grid;
+        align-items: center;
+        width: 600px;
+        height: 300px;
+
+    }
+
+    .textweer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -137,6 +191,12 @@ input {
 
     body {
         margin: 0px;
+    }
+
+    .textweer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -159,13 +219,19 @@ input {
     body {
         margin: 0px;
     }
+
+    .textweer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-/* lay-out voor apparaten met een kleine height*/
+/* lay-out voor apparaten met een kleine height wordt nog aangepast*/
 
 @media screen and (max-height: 600px) {
     #dashboard {
-        height: 98vh;
+        height: 100vh;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -193,5 +259,11 @@ input {
         padding: none;
         background-color: rgb(19, 116, 195);
         grid-area: header;
+    }
+
+    .textweer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
 }

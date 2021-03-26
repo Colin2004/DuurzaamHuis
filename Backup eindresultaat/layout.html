@@ -22,16 +22,27 @@
           <div class="Kosten" data-id="STROOM">
             <h1>Titel apparaat</h1>
             <div>
-                <h3><p id="kostenP">Aantal kWh: <span>0</span></p></h3>
+                <p id="kostenP">minuten per dag: <span>0</span></p>
                 <input type="range" min="0" max="240" step="10" value="15" />
             </div>
-            <h2>Verbruik of kosten</h2>
             <button>Toon verbruik</button>
           </div>
         </div>
 
 
-        <div class="item weer">WEER</div>
+        <div class="item weer">
+          <div id="weerpositie">
+            <h2 class="textweer">Weather</h2>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/52d374d90/amsterdam/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-days="3" data-theme="pure" >AMSTERDAM WEATHER</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+          </div>
+        </div>
+          
+
+
+
         <!--- Hier komt de tijd te staan "theme" moet nog veranderd worden naar time  -->
         <div class="item theme">
               <div class="tijdcard">
@@ -52,6 +63,7 @@
     </div>
 
   <!--Hier wordt javascript ingeladen-->
+  
   <script src="stroomKosten.js"></script> <!-- De stroom kosten berekenen-->
   
 </body>
