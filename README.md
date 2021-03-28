@@ -1,8 +1,8 @@
-Hier boven vind je als ons gemaakte werk voor het dashboard 📓
+📓 Hier boven vind je als ons gemaakte werk voor het dashboard 
 
 [Naar onze Trello pagina](https://trello.com/b/xllHJlkt/duurzaamhuis-colin-en-thijn)
 
-[Naar onze dashboard](https://31761.hosts1.ma-cloud.nl/DuurzaamHuis/eindresultaat/index.html)
+[Naar onze dashboard](https://31761.hosts1.ma-cloud.nl/Bright/index.html)
 
 
 ❓  Vragen?
