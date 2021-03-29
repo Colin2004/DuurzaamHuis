@@ -1,9 +1,9 @@
 📓 Hier boven vind je als ons gemaakte werk voor het dashboard.
-<br>
 
+<br>
 📔 [Naar onze Trello pagina](https://trello.com/b/xllHJlkt/duurzaamhuis-colin-en-thijn) 
 
-🌐 [Naar onze dashboard](http://31761.hosts1.ma-cloud.nl/Bright/index.html) 
+🌐 [Naar onze dashboard](http://31761.hosts1.ma-cloud.nl/eindresultaat/Bright/index.html) 
 
 <br>
 ❓  Vragen?
