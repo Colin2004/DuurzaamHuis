@@ -1,0 +1,10 @@
+body {
+    background-color: seashell;
+}
+
+#grafiek {
+    background-color: #ffffff;
+    border: 2px dotted #333333;
+    width: 800px;
+    height: 600px;
+}
