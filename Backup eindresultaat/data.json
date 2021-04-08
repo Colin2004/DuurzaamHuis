@@ -1,6 +1,6 @@
 {
     "labels": ["january", "februari", "maart", "april"],
     "series": [
-        [112, 230, 356, 467]
+        [1, 2, 3, 4]
     ]
 }

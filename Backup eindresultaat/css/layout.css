@@ -67,10 +67,19 @@ body {
     height: 100%;
     padding: 0px;
 
+    
 }
 
 .verbruik {
     grid-area: verbruik;
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(77, 115, 146);;
+    border-bottom: none;
+    border-left: none;
+    border-width: 5px;
+
 }
 
 .knopverbruik {
@@ -89,7 +98,7 @@ input {
     cursor: pointer;
 }
 
-inputhover {
+.input:hover {
     cursor: pointer;
     width: 100%;
 }
@@ -107,6 +116,13 @@ inputhover {
     justify-content: center;
     padding-top: 50px;
 
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(77, 115, 146);;
+    border-bottom: none;
+    border-left: none;
+    border-width: 5px;
+
 }
 
 
@@ -119,6 +135,14 @@ inputhover {
 
 .weer {
     grid-area: weer;
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(77, 115, 146);;
+    border-bottom: none;
+    border-left: none;
+    border-width: 5px;
+
 
 }
 
@@ -138,10 +162,25 @@ inputhover {
 .theme {
     grid-area: theme;
 
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(77, 115, 146);;
+    border-bottom: none;
+    border-left: none;
+    border-width: 5px;
+
+
 }
 
 .controlpanel {
     grid-area: controlpanel;
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(77, 115, 146);;
+    border-bottom: none;
+    border-left: none;
+    border-width: 5px;
 
 }
 
@@ -172,6 +211,14 @@ inputhover {
                              "theme         theme";
     }
 
+    .item {
+        background-color:  #FFFFFF;
+        border: 2px solid rgb(111, 110, 110);
+        border-radius: 10px;
+        padding: 20px;  
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
     .header {
         background-color: rgb(77, 115, 146);
         grid-area: header;
@@ -193,10 +240,6 @@ inputhover {
 @media screen and (min-width: 935px) {
     body{
         margin: 0px;
-    }
-
-    .item{
-        margin-bottom: 0px;
     }
 
     #dashboard {
@@ -253,6 +296,14 @@ inputhover {
                              "weer         weer            theme" ;
     }
 
+    .item {
+        background-color:  #FFFFFF;
+        border: 2px solid rgb(111, 110, 110);
+        border-radius: 10px;
+        padding: 20px;  
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
     body {
         margin: 0px;
     }
@@ -294,6 +345,14 @@ inputhover {
                              "berekenaar      berekenaar"
                              "weer            weer"
                              "theme           theme" ;
+    }
+
+    .item {
+        background-color:  #FFFFFF;
+        border: 2px solid rgb(111, 110, 110);
+        border-radius: 10px;
+        padding: 20px;  
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     body {
