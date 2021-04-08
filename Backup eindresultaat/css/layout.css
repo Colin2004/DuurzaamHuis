@@ -1,4 +1,17 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Fira Sans', sans-serif;
+}
+
 h2{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h3{
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -7,7 +20,7 @@ body {
     margin: 0px; /* Dit zorgt ervoor dat er geen overbodige margin in de body zit. 
                      Dit zorgt er soms voor dat de content net niet volledig past*/
 
-    background-color: rgba(180, 180, 180, 0.849);
+    background-color: rgba(211, 185, 185, 0.849);
 
 }
 /*telefoon en tablet versie*/
@@ -43,6 +56,7 @@ body {
 .header {
     background-color: rgb(77, 115, 146);
     grid-area: header;
+
 }
 
 /* Op bepaalde qeury's word de header te groot door de logo */
@@ -57,12 +71,30 @@ body {
 
 .verbruik {
     grid-area: verbruik;
+}
 
+.knopverbruik {
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+
+/* grafiek met verbruik (moet nog aan gewerkt worden) */
+#grafiek {
+    grid-area: verbruik;
 }
 
 input {
     width: 100%;
+    cursor: pointer;
 }
+
+inputhover {
+    cursor: pointer;
+    width: 100%;
+}
+
+
 
 #kostenP {
     align-items: center;
@@ -71,8 +103,13 @@ input {
 /* Hier ben ik mee bezig niks mee doen aub*/
 .berekenaar {
     grid-area: berekenaar;
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
 
 }
+
+
 
 /* Dit is de stroomkosten berekenaar */
 .Kosten {
@@ -120,6 +157,7 @@ input {
 
 @media screen and (max-width: 740px) {
     #dashboard {
+        background-color: rgb(170, 170, 170);
         transition: all 350ms ease-in;
         height: 98vh;
         display: grid;
@@ -162,6 +200,7 @@ input {
     }
 
     #dashboard {
+
         transition: all 350ms ease-in;
         height: 99vh;
         display: grid;

@@ -1,9 +1,9 @@
 const startGrafiek = () => {
     // Hier komt de jouw code die na het laden van de pagina wordt uitgevoerd
-    laadJSON("data.json");
+    loadJSON("data.json");
 }
 
-const laadJSON = (url) => {
+const loadJSON = (url) => {
 // het XMLHttpRequest object maken
     const aanvraag = new XMLHttpRequest();
   

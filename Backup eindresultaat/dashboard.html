@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- De grafiek inladen -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- De layout -->
     <link rel="stylesheet" href="css/layout.css">
@@ -31,10 +36,10 @@
             <h1>Titel apparaat</h1>
             <div>
                 <p>minuten per dag: <span>0</span></p>
-                <input type="range" min="0" max="240" step="10" value="15" />
+                <div class="sliderkosten"><input type="range" min="0" max="240" step="10" value="15" /></div>
             </div>
             <h2>Verbruik of kosten</h2>
-            <button>Toon verbruik</button>
+            <button class="knopverbruik">Toon verbruik</button>
           </div>
         </div>
 
@@ -72,11 +77,9 @@
     </div>
 
   <!--Hier wordt javascript ingeladen-->
-  
-  <script src="stroomKosten.js"></script> <!-- De stroom kosten berekenen-->
+
   <script src="js/apparaten.js"></script>
   <script src="js/grafiek.js"></script>
-  <script src="stroomKosten.js"></script> 
   <script src="js/apparaten.js"></script>
   
 </body>
