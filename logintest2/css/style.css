@@ -1,0 +1,197 @@
+/* *BODY * -----------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+  }
+  
+  body {
+    background: #1c1c1f;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* *LOGIN VORMEVING * ------------------------------------------------*/
+  .login-form {
+    width: 470px;
+    background: #252529;
+    border-radius: 5px;
+    padding: 140px 40px;
+  }
+  
+  #login-style {
+    -webkit-appearance: none;
+    appearance: none;
+    color: #7f7f87;
+    opacity: 1;
+  }
+  
+  /* *LOGO * -----------------------------------------------------------*/
+  .logo {
+    height: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  /* *TEXT  * -----------------------------------------------------------*/
+  .login-form h6 {
+    color: #7f7f87;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .textbox {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .textbox input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #3b3b40;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    color: #f4f4f4;
+    border-radius: 4px;
+  }
+  
+  .textbox input:focus {
+    background: #484848 !important;
+  }
+  
+  .check-message {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+  
+  .textbox input:focus + .check-message {
+    display: none;
+  }
+  
+  .options {
+    margin-top: 15px;
+    color: #7f7f87;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  
+  .remember-me {
+    float: left;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* *CHECKBOX * --------------------------------------------------------*/
+  .checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #3b3b40;
+    margin-right: 15px;
+    position: relative;
+  }
+  
+  .checkbox input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checked {
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    display: none;
+  }
+  
+  .checkbox input:checked + .checked {
+    display: block;
+  }
+  
+  /* *FORGOT YOUR PASSWORD * ------------------------------------------------*/
+  .options a {
+    color: #7f7f87;
+    font-size: 14px;
+    float: right;
+  }
+  
+  /* *LOGIN BUTTON * --------------------------------------------------------*/
+  .login-btn {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background: #1c1c1f;
+    color: #7f7f87;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s linear;
+    border-radius: 4px;
+  }
+  
+  .login-btn.active {
+    background: #17c9b7;
+    color: #fff;
+  }
+  
+  .login-btn.active:hover {
+    opacity: 0.7;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* *PRIVACY POLICY * ---------------------------------------------------------*/
+  .privacy-link {
+    text-align: center;
+    margin-top: 35px;
+  }
+  
+  .privacy-link a {
+    color: #7f7f87;
+    font-size: 14px;
+  }
+  
+  /* *ERROR CODE  * ------------------------------------------------------------*/
+  
+  .error {
+    color:crimson;
+  }
+  
+  
+  /* *MEDIA QUERY VOOR TELEFOON * ----------------------------------------------*/
+  @media screen and (max-width: 470px) {
+    body {
+      background-color: #252529;
+    }
+  
+    .login-form {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }

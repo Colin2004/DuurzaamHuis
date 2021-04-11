@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bright signup</title>
+    <meta content="Bright" property="og:title" />
+    <meta content="https://i.imgur.com/TJVBH4d.jpg" property="og:image" />
+    <link rel="stylesheet" href="css/login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <!-- *ALLE TEXT IN DE LOGIN PAGINA -->
+      <h6>Sign up</h6>
+
+      <form action="signup.php" method="POST">
+        <div style="margin-bottom: 15px" class="textbox">
+          <input type="text" id="name" placeholder="Username" name="name" />
+          <span class="check-message hidden">Required</span>
+        </div>
+
+        <div style="margin-bottom: 15px" class="textbox">
+          <input
+            type="email"
+            id="uname"
+            placeholder="Email Address"
+            name="ename"
+          />
+          <span class="check-message hidden">Required</span>
+        </div>
+
+        <div class="textbox" style="margin-bottom: 15px">
+          <input
+            type="password"
+            id="pname"
+            placeholder="Password (minimaal 8 karakters)"
+          />
+          <span class="check-message hidden">Required</span>
+        </div>
+
+        <div class="textbox">
+          <input
+            type="password"
+            id="rpname"
+            placeholder="Repeat Password"
+            name="pname"
+          />
+          <span class="check-message hidden">Required</span>
+        </div>
+
+        <div class="options">
+          <label class="remember-me">
+            <span class="checkbox">
+              <input type="checkbox" />
+              <span class="checked"></span>
+            </span>
+            Remember me
+          </label>
+
+          <a href="login.php">Already Have an Account?</a>
+        </div>
+
+        <input
+          style="color: #e6e6e6"
+          type="submit"
+          value="Create account"
+          class="login-btn"
+          id="login-style"
+          disabled
+        />
+
+        <div class="privacy-link">
+          <span class="error"></span>
+        </div>
+
+        <div class="privacy-link">
+          <a href="Ecosy_-_Privacy_policy.pdf" target="_blank">Privacy Policy</a>
+        </div>
+      </form>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../assets/scripts/signup.js"></script>
+  </body>
+</html>
