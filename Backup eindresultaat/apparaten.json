@@ -1,9 +1,9 @@
 [
     {
-        "naam": "Verbruik",
-        "vermogen": 13,
-        "image": "images/smartphone.jpg",
-        "code": "PHO"
+        "naam": "airco",
+        "vermogen": 2,
+        "image": "images/airco.jpg",
+        "code": "AIR"
     }
 ]
 

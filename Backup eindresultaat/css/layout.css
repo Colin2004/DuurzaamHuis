@@ -5,10 +5,12 @@ html{
 
 h1{
     font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
 }
 
 h2{
     font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
 }
 
 h3{
@@ -21,7 +23,6 @@ body {
                      Dit zorgt er soms voor dat de content net niet volledig past*/
 
     background-color: rgba(211, 185, 185, 0.849);
-
 }
 /*telefoon en tablet versie*/
 #dashboard {
@@ -56,7 +57,6 @@ body {
 .header {
     background-color: rgb(77, 115, 146);
     grid-area: header;
-
 }
 
 /* Op bepaalde qeury's word de header te groot door de logo */
@@ -66,13 +66,14 @@ body {
     max-width: 100%;
     height: 100%;
     padding: 0px;
+}
 
-    
+#tekstgrafiek {
+    margin-left: 40px;
 }
 
 .verbruik {
     grid-area: verbruik;
-
     border-radius: 25px;
     border-style: solid;
     border-color: rgb(77, 115, 146);;
@@ -115,7 +116,6 @@ input {
     display: grid;
     justify-content: center;
     padding-top: 50px;
-
     border-radius: 25px;
     border-style: solid;
     border-color: rgb(77, 115, 146);;
@@ -124,7 +124,6 @@ input {
     border-width: 5px;
 
 }
-
 
 
 /* Dit is de stroomkosten berekenaar */
@@ -135,15 +134,12 @@ input {
 
 .weer {
     grid-area: weer;
-
     border-radius: 25px;
     border-style: solid;
     border-color: rgb(77, 115, 146);;
     border-bottom: none;
     border-left: none;
     border-width: 5px;
-
-
 }
 
 /* dit is het weer */
@@ -346,7 +342,7 @@ input {
                              "weer            weer"
                              "theme           theme" ;
     }
-
+    
     .item {
         background-color:  #FFFFFF;
         border: 2px solid rgb(111, 110, 110);
