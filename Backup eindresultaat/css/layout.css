@@ -142,10 +142,24 @@ input {
     border-width: 5px;
 }
 
+.berekenaar {
+    display: flex;
+}
+
+
 /* dit is het weer */
 #weerpositie {
     grid-area: weer;
     height: auto;
+}
+
+#fotoairco {
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+#floatright{
+    margin-right: 20px;
 }
 
 .textweer {
@@ -229,6 +243,11 @@ input {
         padding: 0px;
     
     }
+    #fotoairco {
+        height: 50%;
+        max-width: auto;
+    }
+
 }
 
 /*Desktop versie layout*/
