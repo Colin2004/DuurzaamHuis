@@ -15,6 +15,7 @@ h2{
 
 h3{
     font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -26,7 +27,7 @@ body {
 }
 /*telefoon en tablet versie*/
 #dashboard {
-    transition: all 350ms ease-in;
+    transition: all 500ms ease-in;
     height: 97vh; /*staat niet op 100 omdat er dan soms een schuifbalk verschijnt wat niet mooi past op de dashboard*/
     width: 100%;
     display: grid;
@@ -47,6 +48,7 @@ body {
 /* de items en andere elementen in de grid */
 /*  de Grid items  */
 .item {
+    margin: 5px;
     background-color:  #FFFFFF;
     border: 2px solid rgb(111, 110, 110);
     border-radius: 10px;
@@ -82,6 +84,7 @@ body {
     border-width: 5px;
 
 }
+
 
 .knopverbruik {
     cursor: pointer;
@@ -193,7 +196,7 @@ input {
 @media screen and (max-width: 740px) {
     #dashboard {
         background-color: rgb(170, 170, 170);
-        transition: all 350ms ease-in;
+        transition: all 500ms ease-in;
         height: 98vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -240,7 +243,7 @@ input {
 
     #dashboard {
 
-        transition: all 350ms ease-in;
+        transition: all 500ms ease-in;
         height: 99vh;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -279,7 +282,7 @@ input {
 /*layout voor apparaten met hoog scherm zoals de ipad pro*/
 @media screen and ( max-width: 1100px ) and ( min-height: 900px ) {
     #dashboard {
-        transition: all 350ms ease-in;
+        transition: all 500ms ease-in;
         height: 98vh;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -329,7 +332,7 @@ input {
 /*layout voor apparaten met niet brede schermen*/
 @media screen and ( max-width: 350px ) and ( max-height: 550px ){
     #dashboard {
-        transition: all 350ms ease-in;
+        transition: all 500ms ease-in;
         height: 98vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);

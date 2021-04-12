@@ -35,14 +35,16 @@
 
         <!-- Hier komt een kWh berekenaar te staan-->
         <div class="item berekenaar">
-          <div class="apparaat airco" data-id="AIR">
-            <h1>Airco</h1>
-            <div>
-                <p>minuten per dag: <span>0</span></p>
-                <div class="sliderkosten"><input type="range" min="0" max="240" step="10" value="15" /></div>
+          <div class="verbruikmachine">
+            <div class="apparaat airco" data-id="AIR">
+              <h1>Airco</h1>
+              <div>
+                  <p>minuten per dag: <span>0</span></p>
+                  <div class="sliderkosten"><input type="range" min="0" max="240" step="10" value="15" /></div>
+              </div>
+              <h2>Verbruik of kosten</h2>
+              <button class="knopverbruik">Toon verbruik</button>
             </div>
-            <h2>Verbruik of kosten</h2>
-            <button class="knopverbruik">Toon verbruik</button>
           </div>
         </div>
 
@@ -62,17 +64,12 @@
 
         <!-- Hier komt de tijd te staan "theme" moet nog veranderd worden naar time  -->
         <div class="item theme">
-              <div class="tijdcard">
-                <div class="overviewcard__icon">
-                  <div class="tijd">
-                    <div id="dagmaandjaar"></div>
-                    <div class="clock">
-                      <div id="display"></div>
-                    </div>
-                    <div id="places"></div>
-                  </div>
-                </div>
-              </div>
+          <p><h2>Current Date and Time:</h2> <span id="datetime"></span></p>
+
+          <script>
+          var dt = new Date();
+          document.getElementById("datetime").innerHTML = dt.toLocaleString();
+          </script>
         </div>
 
 
