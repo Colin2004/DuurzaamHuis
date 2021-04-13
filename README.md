@@ -2,9 +2,9 @@
 
 <br>
 
-📔 [Naar onze Trello pagina](https://31761.hosts1.ma-cloud.nl/Bright/dashboard.html) 
+📔 [Naar onze Trello pagina](https://trello.com/b/xllHJlkt/duurzaamhuis-colin-en-thijn) 
 
-🌐 [Naar onze dashboard](http://31761.hosts1.ma-cloud.nl/eindresultaat/Bright/index.html) 
+🌐 [Naar onze dashboard](https://31761.hosts1.ma-cloud.nl/Bright/dashboard.html) 
 
 <br>
 ❓  Vragen?
