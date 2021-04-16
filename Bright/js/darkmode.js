@@ -1,13 +1,19 @@
-function darkmode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  }
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 
-  function darkswitch() {
-    var x = document.getElementById("myDIV");
-    if (x.innerHTML === "Switch to darkmode") {
-      x.innerHTML = "Switch to lightmode";
-    } else {
-      x.innerHTML = "Hello";
-    }
+function darkmode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+function darkswitch() {
+  var x = document.getElementById("darkmodeknop");
+  if (x.innerHTML === "darkmode") {
+    x.innerHTML = "lightmode";
+  } else {
+    (x.innerHTML === "lightmode") 
+      x.innerHTML = "darkmode";
   }
+}

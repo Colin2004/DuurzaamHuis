@@ -4,27 +4,99 @@ html{
 }
 
 h1{
+    color: black;
     font-family: 'Fira Sans', sans-serif;
     font-size: 30px;
 }
 
 h2{
+    color: black;
     font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
 }
 
 h3{
+    color: black;
     font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
 }
 
+p{
+    color: black;
+}
 
+/* darkmode */
+.dark-mode {
+    background-color: rgb(47, 47, 47);
+    color: rgba(104, 100, 100, 0.705);
+    border: blue;
+}
+
+.dark-mode h1,h2,h3 {
+   color: white;
+}
+
+.dark-mode p{
+    color: white;
+ }
+
+.dark-mode .lightcontrol {
+    color: rgb(203, 221, 45);
+ }
+ 
+
+.dark-mode .item{
+    margin: 5px;
+    background-color:  #4e4e4e;
+    border: 2px solid rgb(134, 130, 130);
+    border-radius: 10px;
+    padding: 20px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(30, 24, 119);;
+    border-bottom: none;
+    border-left: none;
+    border-width: 5px;
+}
+
+.dark-mode .header{
+    background-color: rgb(31, 45, 92);
+}
+
+.dark-mode #datetime {
+  color: white;
+}
+
+.dark-mode #datetime {
+    color: white;
+  }
+
+.dark-mode .timetext {
+    color: white;
+}
+
+.dark-mode .verbruiktext {
+    color: white;
+ }
+
+.dark-mode .weerfunctie {
+    background-color: gray;
+    color: gray;
+ }
+
+ .dark-mode .lichtswitch h2{
+    color: white;
+}
+
+/* einde darkomde en begin opbouw page */
 body {
     margin: 0px; /* Dit zorgt ervoor dat er geen overbodige margin in de body zit. 
                      Dit zorgt er soms voor dat de content net niet volledig past*/
 
     background-color: rgba(211, 185, 185, 0.849);
 }
+
 /*telefoon en tablet versie*/
 #dashboard {
     transition: all 500ms ease-in;
@@ -61,6 +133,11 @@ body {
     grid-area: header;
 }
 
+.toggledarkmode{
+    grid-area: header;
+
+}
+
 /* Op bepaalde qeury's word de header te groot door de logo */
 #logoLB {
     display: grid;
@@ -85,6 +162,10 @@ body {
 
 }
 
+.verbruiktext {
+    color: black;
+
+ }
 
 .knopverbruik {
     cursor: pointer;
@@ -113,7 +194,7 @@ input {
     align-items: center;
 }
 
-/* Hier ben ik mee bezig niks mee doen aub*/
+/* airco verbuik */
 .berekenaar {
     grid-area: berekenaar;
     display: grid;
@@ -156,11 +237,6 @@ input {
     height: auto;
 }
 
-#fotoairco {
-    margin-right: 20px;
-    margin-top: 50px;
-}
-
 #floatright{
     margin-right: 20px;
 }
@@ -182,7 +258,14 @@ input {
     border-left: none;
     border-width: 5px;
 
+}
 
+#datetime{
+    color: black;
+}
+
+.timetext{
+    color: black;
 }
 
 .controlpanel {
@@ -196,12 +279,23 @@ input {
 
 }
 
-.lightcontrol {
-    grid-area: controlpanel;
-    display: flex;
-    align-items: center;
+.lichtswitch{
+    position: center;
+    display: grid;
     justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-bottom: 50px;
 }
+
+.lichtswitch h2{
+    color: black;
+}
+
+.lightcontrol{
+    display: flex;
+}
+
 
 .tijdcard {
     justify-content: space-between;
@@ -209,6 +303,70 @@ input {
     
 }
 
+.switch1 {
+    display: flex;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+  }
+
+
+  
+  /*laat de chechbox niet zien*/
+  .switch1 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* de slider voor de switch */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 4px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(45px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
 /* Verschillende media querys om het dashboard op zoveel mogelijk apparaten te laten functioneren*/
 
 /* extra versie voor telefoon */

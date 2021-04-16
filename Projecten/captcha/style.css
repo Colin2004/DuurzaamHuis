@@ -1,5 +1,9 @@
-#form {
-    background-color: blueviolet;
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#form{
 
+}

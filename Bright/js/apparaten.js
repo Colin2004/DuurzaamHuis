@@ -4,7 +4,7 @@ let apparaten = [];
 
 const startCalculator = () => {
   // Inladen van JSON bestand
-  laadJSON("apparaten.json");
+  laadJSON("json/apparaten.json");
 };
 
 const laadJSON = (url) => {

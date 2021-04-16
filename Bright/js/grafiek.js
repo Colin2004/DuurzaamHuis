@@ -1,6 +1,6 @@
 const startGrafiek = () => {
     // Hier komt de jouw code die na het laden van de pagina wordt uitgevoerd
-    loadJSON("data.json");
+    loadJSON("json/data.json");
 }
 
 const loadJSON = (url) => {

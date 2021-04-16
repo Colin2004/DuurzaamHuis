@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <form method="get" action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off" role="main">
+        <h1 class="a11y-hidden">Login Form</h1>
+        <div>
+          <label class="text">
+            <input type="text" class="text" name="email" placeholder="Name" tabindex="" required />
+            <span class="required">Name</span>
+          </label>
+        </div>
+        </label>
+        <div>
+            <div class="item captcha">
+                    <input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend"
+                    value="colindegroot2004@outlook.com" />
+                    <input type="hidden" id="skip_Subject" name="skip_Subject"
+                    value="Login in Bright" />
+                    <input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn"
+                    value="https://31761.hosts1.ma-cloud.nl/Bright/dashboard.html" />
+                    <input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
+                    value="XGUGSBP36BNK" />
+                    <table cellspacing="0" cellpadding="8"
+                    style="background-color:#ffffff;">
+                    <tr valign="bottom"><td>
+                    <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a><br />
+                    <a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsExtendedForm.aspx"><img id="CaptchaImage"
+                    alt="online contact form" style="border-width:0px;"
+                    title="online contact form"
+                    src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=XGUGSBP36BNK" /></a>
+                    </td><td>  <br /><i>Enter Captcha code</i><br />
+                    <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
+                    style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br />
+                    </td></tr></table>
+                    <script type="text/javascript">
+                    function ReloadCaptchaImage(captchaImageId) {
+                    var obj = document.getElementById(captchaImageId);
+                    var src = '' + obj.src;
+                    obj.src = '';
+                    var date = new Date();
+                    var pos = src.indexOf('&rad=');
+                    if (pos >= 0) { src = src.substr(0, pos); }
+                    obj.src = src + '&rad=' + date.getTime();
+                    return false; }</script>
+
+            </div>
+        </div>
+        <a href="http://31761.hosts1.ma-cloud.nl/Bright/dashboard.html"></a>
+        <input type="submit" value="Log In" />
+        <figure aria-hidden="true">
+          <div class="person-body"></div>
+          <div class="neck skin"></div>
+          <div class="head skin">
+            <div class="eyes"></div>
+            <div class="mouth"></div>
+          </div>
+          <div class="hair"></div>
+          <div class="ears"></div>
+          <div class="shirt-1"></div>
+          <div class="shirt-2"></div>
+        </figure>
+      </form>
+</body>
+</html>

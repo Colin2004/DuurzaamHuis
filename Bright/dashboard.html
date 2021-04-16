@@ -26,6 +26,7 @@
           <!-- Logo moet veranderd worden naar logo zonder tekst-->
             <img id="logoLB" src="logo/logoLB.png" alt="Bright logo">
         </div>
+        
 
 
         <div class="item verbruik">
@@ -43,10 +44,10 @@
             <div class="apparaat airco" data-id="AIR">
               <h1>Airco</h1>
               <div>
-                  <p>minuten per dag: <span>0</span></p>
+                  <p>minuten per dag:<span>0</span></p>
                   <div class="sliderkosten"><input type="range" min="0" max="240" step="10" value="15" /></div>
               </div>
-              <h2>Verbruik of kosten</h2>
+              <h2 class="verbruiktext">Verbruik of kosten</h2>
               <button class="knopverbruik">Toon verbruik</button>
             </div>
           </div>
@@ -58,7 +59,7 @@
           <div id="weerpositie">
             <h1 class="textweer">Weather</h2>
             <a class="weatherwidget-io" href="https://forecast7.com/en/52d374d90/amsterdam/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-days="3" data-theme="pure" >AMSTERDAM WEATHER</a>
-            <script>
+            <script class="weerfunctie">
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
           </div>
@@ -69,7 +70,7 @@
 
         <!-- Hier komt de tijd te staan "theme" moet nog veranderd worden naar time  -->
         <div class="item theme">
-          <p><h2>Current Date and Time:</h2> <span id="datetime"></span></p>
+          <p><h2 class="timetext">Current Date and Time:</h2> <span id="datetime"></span></p>
 
           <script>
           var dt = new Date();
@@ -78,11 +79,52 @@
         </div>
 
 
-        <div class="item controlpanel">controlpanel</div>
-          <div class="lightcontrol">
-            <i class="fa fa-lightbulb-o" style="font-size:0px"></i>
-            
-          </div>
+        <div class="item controlpanel">
+          <div class="controls">
+            <div class="lichtswitch">
+              <div class="lightcontrol">
+                <i class="fa fa-lightbulb-o" style="font-size:40px"></i><h2>led1</h2>
+                <br>
+                <br>
+              </div>
+              <div id="switches">
+                <div id="switch1">
+                    <label class="switch1" onclick="myFunction()">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="lichtswitch">
+              <div class="lightcontrol">
+                <i class="fa fa-lightbulb-o" style="font-size:40px"></i><h2>led2</h2>
+                <br>
+                <br>
+              </div>
+              <div id="switches">
+                <div id="switch1">
+                    <label class="switch1" onclick="myFunction()">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="lichtswitch">
+              <div class="lightcontrol">
+                <i class="fa fa-sun-o" style="font-size:40px"></i><pre class="tab">   </pre><i class="fa fa-moon-o" style="font-size:40px"></i>
+                <br>
+              </div>
+              <div id="toggledarkmode">
+                <button id="darkmodeknop" onclick="myFunction()">darkmode</button>
+            </div>
+            </div>
+        </div>
         </div>
 
   <!--Hier wordt javascript ingeladen-->
@@ -91,6 +133,7 @@
   <script src="js/grafiek.js"></script>
   <script src="js/apparaten.js"></script>
   <script src="js/time.js"></script>
+  <script src="js/darkmode.js"></script>
   
 </body>
 </html>
