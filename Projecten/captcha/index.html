@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="form">
+        <div class="item tekst">
+            <h3>Om gebruik te kunnen maken van ons dashboard moet u eerst bevestigen geen robot te zijn.
+                <br>
+                Dit doet u door de tekst in het lege vak te typen en op enter te drukken.
+            </h3>
+        </div>
+        <div class="item empty">
+
+        </div>
+        <div class="item captcha">
+            <form action="https://www.SnapHost.com/captcha/send.aspx" method="post" id="myform" target="_top">
+                <input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend"
+                value="colindegroot2004@outlook.com" />
+                <input type="hidden" id="skip_Subject" name="skip_Subject"
+                value="Login in Bright" />
+                <input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn"
+                value="https://31761.hosts1.ma-cloud.nl/Bright/dashboard.html" />
+                <input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
+                value="XGUGSBP36BNK" />
+                <table cellspacing="0" cellpadding="8"
+                style="background-color:#ffffff;">
+                <tr valign="bottom"><td>
+                <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a><br />
+                <a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsExtendedForm.aspx"><img id="CaptchaImage"
+                alt="online contact form" style="border-width:0px;"
+                title="online contact form"
+                src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=XGUGSBP36BNK" /></a>
+                </td><td>  <br /><i>Enter Captcha code</i><br />
+                <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
+                style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br />
+                </td></tr></table>
+                <script type="text/javascript">
+                function ReloadCaptchaImage(captchaImageId) {
+                var obj = document.getElementById(captchaImageId);
+                var src = '' + obj.src;
+                obj.src = '';
+                var date = new Date();
+                var pos = src.indexOf('&rad=');
+                if (pos >= 0) { src = src.substr(0, pos); }
+                obj.src = src + '&rad=' + date.getTime();
+                return false; }</script>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

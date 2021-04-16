@@ -1,0 +1,31 @@
+#from {
+    transition: all 500ms ease-in;
+    height: 97vh; /*staat niet op 100 omdat er dan soms een schuifbalk verschijnt wat niet mooi past op de dashboard*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "empty tekst   tekst   empty"
+                         "empty captcha captcha empty"
+                         "empty captcha captcha empty"
+                         "empty captcha captcha empty";
+}
+
+.item{
+    background-color: rgb(52, 52, 100);
+    color: white;
+}
+
+.tekst{
+    grid-area: tekst;
+}
+
+.captcha {
+    grid-area: captcha;
+}
+
+.empty{
+    border: blue solid 5px;
+    grid-area: empty;
+}

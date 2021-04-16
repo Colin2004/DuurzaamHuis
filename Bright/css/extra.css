@@ -187,7 +187,6 @@ input {
 
 .controlpanel {
     grid-area: controlpanel;
-
     border-radius: 25px;
     border-style: solid;
     border-color: rgb(77, 115, 146);;
@@ -195,6 +194,13 @@ input {
     border-left: none;
     border-width: 5px;
 
+}
+
+.lightcontrol {
+    grid-area: controlpanel;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tijdcard {
